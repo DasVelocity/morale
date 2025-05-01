@@ -322,5 +322,23 @@
     createParticles();
     drawParticles();
   </script>
+
+<script>
+  const allowedKey = "ACCESS-2025-QR-43Fkj29_Ht8Wm7cZxL0e-QrX!";
+  const urlParams = new URLSearchParams(window.location.search);
+  const accessKey = urlParams.get("access");
+
+  if (accessKey !== allowedKey) {
+    document.body.innerHTML = `
+      <div style="text-align:center; margin-top:100px;">
+        <h1>🚫 Geen toegang</h1>
+        <p>Je hebt een geldige QR-code nodig om deze site te bekijken.</p>
+      </div>
+    `;
+    // Optional: redirect after a few seconds
+    // setTimeout(() => window.location.href = 'https://example.com', 5000);
+  }
+</script>
+
 </body>
 </html>
