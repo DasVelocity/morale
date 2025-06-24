@@ -339,16 +339,109 @@
     <h1>Counterdoelpunt Rode Duivels</h1>
   </header>
 
-  <div class="container">
-    <article>
-      <p>Dit wordt later ingevuld. Analyse van het counterdoelpunt van de Rode Duivels met reactie van de coach.</p>
-      <video controls>
+<div class="container">
+  <article id="quiz-article">
+    <form id="quiz-form">
+      <p style="font-size: 1.2em; font-weight: 400;">Test je kennis over de Rode Duivels!</p>
+
+      <!-- Vraag 1 -->
+      <div style="margin-bottom: 25px;">
+        <p><strong>1. In welk stadion werd de WK-wedstrijd tussen Japan en België gespeeld?</strong></p>
+        <label><input type="radio" name="q1" value="a" required> Krestovsky Stadion</label><br>
+        <label><input type="radio" name="q1" value="b"> Luzhniki Stadion</label><br>
+        <label><input type="radio" name="q1" value="c"> Rostov Arena</label><br>
+        <label><input type="radio" name="q1" value="d"> Kazan Arena</label>
+      </div>
+
+      <!-- Vraag 2 -->
+      <div style="margin-bottom: 25px;">
+        <p><strong>2. Hoeveel seconden duurde deze counter vanaf de handschoenen van Courtois tot de goal van Chadli?</strong></p>
+        <label><input type="radio" name="q2" value="a" required> 5,94 seconden</label><br>
+        <label><input type="radio" name="q2" value="b"> 7,94 seconden</label><br>
+        <label><input type="radio" name="q2" value="c"> 9,94 seconden</label><br>
+        <label><input type="radio" name="q2" value="d"> 11,94 seconden</label>
+      </div>
+
+      <!-- Vraag 3 -->
+      <div style="margin-bottom: 25px;">
+        <p><strong>3. Hoeveel passes gaf België in de aanloop naar de winnende goal van Nacer Chadli?</strong></p>
+        <label><input type="radio" name="q3" value="a" required> 2</label><br>
+        <label><input type="radio" name="q3" value="b"> 3</label><br>
+        <label><input type="radio" name="q3" value="c"> 4</label><br>
+        <label><input type="radio" name="q3" value="d"> 5</label>
+      </div>
+
+      <!-- Vraag 4 -->
+      <div style="margin-bottom: 25px;">
+        <p><strong>4. Welke Belgische speler scoorde met een kopbal om de comeback in te zetten?</strong></p>
+        <label><input type="radio" name="q4" value="a" required> Jan Vertonghen</label><br>
+        <label><input type="radio" name="q4" value="b"> Vincent Kompany</label><br>
+        <label><input type="radio" name="q4" value="c"> Axel Witsel</label><br>
+        <label><input type="radio" name="q4" value="d"> Toby Alderweireld</label>
+      </div>
+
+      <!-- Vraag 5 -->
+      <div style="margin-bottom: 25px;">
+        <p><strong>5. Welke speler liet bewust een bal lopen in de laatste aanval, waardoor Chadli vrij kon scoren?</strong></p>
+        <label><input type="radio" name="q5" value="a" required> Kevin De Bruyne</label><br>
+        <label><input type="radio" name="q5" value="b"> Dries Mertens</label><br>
+        <label><input type="radio" name="q5" value="c"> Romelu Lukaku</label><br>
+        <label><input type="radio" name="q5" value="d"> Thomas Meunier</label>
+      </div>
+
+      <button type="submit" class="back-button" style="margin-top: 10px;">Toon Score</button>
+    </form>
+
+    <!-- Resultaat -->
+    <div id="quiz-result" style="margin-top: 30px; display: none;">
+      <p id="score-text" style="font-size: 1.3em; font-weight: 500;"></p>
+      <div id="summary-text" style="margin-top: 15px;"></div>
+      <button class="back-button" onclick="showVideo()">Bekijk video & verhaal</button>
+    </div>
+
+    <!-- Extra verhaal + video -->
+    <div id="extra-video" style="margin-top: 40px; display: none;">
+      <p><strong>De Legendarische Comeback van de Rode Duivels tegen Japan – WK 2018</strong></p>
+
+      <p>
+        Op 2 juli 2018 in het Rostov-on-Don Stadion vond er één van de meest spectaculaire comebacks plaats uit de WK-geschiedenis.
+        Tegen Japan kwamen de Rode Duivels in de achtste finale eerst fel onder druk te staan: Genki Haraguchi opende de score in de 48e minuut en Takashi Inui verdubbelde de voorsprong amper vier minuten later.
+        Plots leek de droom van de kwartfinale weg te zijn, terwijl de Belgen worstelden met zowel de snelheid van de Japanners als hun eigen zenuwen.
+      </p>
+
+      <p>
+        Toch had België aan vertrouwen geen gebrek. Het team begon met een ongeslagen reeks die terugging tot september 2016 en waarin het in elke wedstrijd wist te scoren.
+        Pas in de 69e minuut brak kapitein Jan Vertonghen de ban met een kopbal, waarop invaller Marouane Fellaini vijf minuten later de 2-2 binnenkopte.
+      </p>
+
+      <p>
+        Diep in de blessuretijd volgde de ultieme ontknoping. Thibaut Courtois wierp snel uit naar Kevin De Bruyne, die de razendsnelle counter opzette.
+        Thomas Meunier gaf een lage voorzet, Romelu Lukaku liet de bal bewust lopen (een dummy), en Nacer Chadli scoorde: 3-2, met nog maar seconden te spelen.
+      </p>
+
+      <p>
+        Slechts drie keer eerder in de WK-geschiedenis wist een ploeg in een knock-outwedstrijd een 0-2 achterstand om te buigen in winst binnen 90 minuten. België schreef geschiedenis.
+        In de kwartfinale versloegen ze Brazilië. De halve finale werd nipt verloren van Frankrijk. Maar tegen Engeland won België de troostfinale en werd zo knap derde.
+      </p>
+
+      <video controls style="max-width: 100%; margin-top: 20px;">
         <source src="rodeduivels.mp4" type="video/mp4" />
         Je browser ondersteunt deze video niet.
       </video>
+
+      <div style="margin-top: 20px;">
+        <strong>Meer lezen:</strong>
+        <ul>
+          <li><a href="https://sporza.be/nl/matches/voetbal/wld/fifa-wereldkampioenschap/2018/1-8-finale/01/belgie-japan~1527000121554/" target="_blank">Sporza: België - Japan 3-2</a></li>
+          <li><a href="https://www.hln.be/rode-duivels/de-mooiste-counter-uit-de-geschiedenis-van-het-belgische-voetbal-in-9-94-seconden-en-via-vijf-stations-naar-de-kwartfinale-ik-snapte-de-japanners-niet~a5b383cf/" target="_blank">HLN: De mooiste counter uit de geschiedenis</a></li>
+        </ul>
+      </div>
+
       <a href="index.html" class="back-button">⬅ Terug naar Home</a>
-    </article>
-  </div>
+    </div>
+  </article>
+</div>
+
 
   <div class="toggle-container">
     <button class="toggle-button" onclick="toggleTheme()">Light/Dark Mode</button>
@@ -536,5 +629,40 @@
     createParticles();
     drawParticles();
   </script>
+
+<script>
+document.getElementById("quiz-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const answers = {
+    q1: "c",
+    q2: "c",
+    q3: "b",
+    q4: "a",
+    q5: "c"
+  };
+
+  let score = 0;
+  let total = Object.keys(answers).length;
+
+  for (let key in answers) {
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (selected && selected.value === answers[key]) {
+      score++;
+    }
+  }
+
+  document.getElementById("score-text").innerText = `Je score: ${score} van de ${total}`;
+  document.getElementById("quiz-form").style.display = "none";
+  document.getElementById("quiz-result").style.display = "block";
+});
+
+function showVideo() {
+  document.getElementById("quiz-result").style.display = "none";
+  document.getElementById("extra-video").style.display = "block";
+}
+</script>
+
+
 </body>
 </html>
