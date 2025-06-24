@@ -340,15 +340,120 @@
   </header>
 
   <div class="container">
-    <article>
-      <p>Dit wordt later ingevuld. De video toont de winnende sprint van Tom Boonen tijdens het wereldkampioenschap wielrennen.</p>
-      <video controls>
-        <source src="tom.mp4" type="video/mp4" />
-        Je browser ondersteunt deze video niet.
-      </video>
+  <article id="quiz-article">
+    <form id="quiz-form">
+      <p style="font-size: 1.2em; font-weight: 400;">Test je kennis!</p>
+
+     <!-- Vraag 1 -->
+<div style="margin-bottom: 25px;">
+  <p><strong>1. Welke Belgische wielerlegende won de regenboogtrui voor het laatst voordat Tom Boonen het in 2005 deed?</strong></p>
+  <label><input type="radio" name="q1" value="a" required> Eddy Merckx</label><br>
+  <label><input type="radio" name="q1" value="b"> Johan Museeuw</label><br>
+  <label><input type="radio" name="q1" value="c"> Rik Van Looy</label><br>
+  <label><input type="radio" name="q1" value="d"> Philippe Gilbert</label>
+</div>
+
+<!-- Vraag 2 -->
+<div style="margin-bottom: 25px;">
+  <p><strong>2. Welke andere grote eendagswedstrijden won Tom Boonen in hetzelfde seizoen als het WK 2005?</strong></p>
+  <label><input type="radio" name="q2" value="a" required> Ronde van Vlaanderen en Parijs–Roubaix</label><br>
+  <label><input type="radio" name="q2" value="b"> Milaan-San Remo en Luik-Bastenaken-Luik</label><br>
+  <label><input type="radio" name="q2" value="c"> Amstel Gold Race en Parijs–Tours</label><br>
+  <label><input type="radio" name="q2" value="d"> Gent-Wevelgem en de Ronde van Lombardije</label>
+</div>
+
+<!-- Vraag 3 -->
+<div style="margin-bottom: 25px;">
+  <p><strong>3. Opvallend: Welke eeuwige rivaal van Tom Boonen eindigde als allerlaatste op het WK Wegwielrennen van 2005, maar behaalde wel brons op het WK Tijdrijden datzelfde jaar?</strong></p>
+  <label><input type="radio" name="q3" value="a" required> Alessandro Ballan</label><br>
+  <label><input type="radio" name="q3" value="b"> Fabian Cancellara</label><br>
+  <label><input type="radio" name="q3" value="c"> Paolo Bettini</label><br>
+  <label><input type="radio" name="q3" value="d"> Johan Museeuw</label>
+</div>
+
+<!-- Vraag 4 -->
+<div style="margin-bottom: 25px;">
+  <p><strong>4. Hoeveel kilometer moest hij afleggen om de wereldtitel te behalen?</strong></p>
+  <label><input type="radio" name="q4" value="a" required> 230 km</label><br>
+  <label><input type="radio" name="q4" value="b"> 273 km</label><br>
+  <label><input type="radio" name="q4" value="c"> 290 km</label><br>
+  <label><input type="radio" name="q4" value="d"> 315 km</label>
+</div>
+
+<!-- Vraag 5 -->
+<div style="margin-bottom: 25px;">
+  <p><strong>5. Wie was de Belgische bondscoach tijdens het WK Wegwielrennen van 2005?</strong></p>
+  <label><input type="radio" name="q5" value="a" required> Eddy Merckx</label><br>
+  <label><input type="radio" name="q5" value="b"> José De Cauwer</label><br>
+  <label><input type="radio" name="q5" value="c"> Carlo Bomans</label><br>
+  <label><input type="radio" name="q5" value="d"> Kevin De Weer</label>
+</div>
+
+
+      <button type="submit" class="back-button" style="margin-top: 10px;">Toon Score</button>
+    </form>
+
+    <!-- Resultaat -->
+    <div id="quiz-result" style="margin-top: 30px; display: none;">
+      <p id="score-text" style="font-size: 1.3em; font-weight: 500;"></p>
+      <div id="summary-text" style="margin-top: 15px;"></div>
+      <button class="back-button" onclick="showVideo()">Bekijk video & verhaal</button>
+    </div>
+
+<!-- Extra verhaal + video -->
+<div id="extra-video" style="margin-top: 40px; display: none;">
+  <p><strong>De Legendarische Overwinning van Tom Boonen op het WK Wielrennen 2005</strong></p>
+
+  <p>
+    Op zondag 25 september 2005 schreef Tom Boonen geschiedenis op het WK wielrennen in Madrid. Na 273 kilometer klopte hij in een sprint op de Paseo de la Castellana zowel 
+    <a href="https://www.hln.be/wielrennen/dag-op-dag-15-jaar-geleden-knalde-boonen-in-madrid-naar-de-wereldtitel-onze-tom-is-een-geschenk-van-god~a400e9cf/" target="_blank" rel="noopener noreferrer">Alejandro Valverde</a> 
+    als 
+    <a href="https://sporza.be/nl/2016/10/14/11-jaar-terug-in-de-tijd-boonen-wereldkampioen-in-madrid-1-2792249/" target="_blank" rel="noopener noreferrer">Anthony Geslin</a> 
+    en pakte zo de felbegeerde regenboogtrui.
+  </p>
+
+  <p>
+    De koers bleef lange tijd gesloten, met meerdere renners die probeerden weg te rijden, maar telkens weer werden ingehaald. In de slotfase speelden Nick Nuyens en Peter Van Peteghem een beslissende rol door samen met het peloton de koplopers, waaronder Paolo Bettini en Alexandre Vinokourov, terug te halen. Daardoor kwam Boonen in een ideale positie voor de eindsprint. Hij bleef geduldig achter Alejandro Valverde rijden en wachtte op het perfecte moment om zijn sprint in te zetten en reed zo naar een legendarische overwinning.
+  </p>
+
+  <p>
+    “Tommeke, Tommeke, Tommeke, wat doe je nu?” – Michel Wuyts<br>
+    Deze iconische woorden van Michel Wuyts zijn voor altijd verbonden met het onvergetelijke moment waarop Tom Boonen zijn wereldtitel veroverde. "Valverde zit daar ook nog altijd, Boonen zit aan het wiel van Valverde. Ik zie geen Petacchi. Tom Boonen moet zich nu losmaken, mag zich niet laten insluiten. Vinokourov in het centrum, Valverde zet zich recht. Tom Boonen komt eruit, Tom Boonen pakt nu over. Tom Boonen over Valverde! Tommeke, Tommeke, Tommeke, wat doe je nu? Tom Boonen gaat wereldkampioen worden! Tom Boonen gaat wereldkampioen worden! Tom Boonen op één, Tom Boonen op één! Tom Boonen is wereldkampioen!”
+  </p>
+
+  <p>
+    Met deze zege voltooide Boonen een prestatie die nog nooit eerder was vertoond: als eerste renner in één seizoen de Ronde van Vlaanderen, Parijs–Roubaix én het WK op de weg winnen. Bovendien was hij de eerste Belg sinds Johan Museeuw in 1996 die de regenboogtrui droeg.
+  </p>
+
+  <p>
+    Aan het einde van dat uitmuntende jaar werd Boonen overladen met onderscheidingen. Hij ontving de Kristallen Fiets, de internationale wielerprijs Vélo d’Or Mondial, de Trofee voor Sportverdienste en werd verkozen tot Sportman én Sportpersoonlijkheid van het jaar 2005.
+  </p>
+
+  <p>
+    De overwinning in Madrid blijft een hoogtepunt in de rijke Belgische wielergeschiedenis. Niet alleen was het een demonstratie van sprintkracht en ploegentactiek, maar dankzij Michel Wuyts’ iconische commentaar leeft dit moment nog altijd voort in de harten van wielerliefhebbers.
+  </p>
+
+  <p>
+    Meer lezen:
+    <ul>
+      <li><a href="https://www.hln.be/wielrennen/dag-op-dag-15-jaar-geleden-knalde-boonen-in-madrid-naar-de-wereldtitel-onze-tom-is-een-geschenk-van-god~a400e9cf/" target="_blank" rel="noopener noreferrer">HLN - Dag op dag: Boonen naar wereldtitel</a></li>
+      <li><a href="https://sporza.be/nl/2016/10/14/11-jaar-terug-in-de-tijd-boonen-wereldkampioen-in-madrid-1-2792249/" target="_blank" rel="noopener noreferrer">Sporza - 11 jaar terug: Boonen wereldkampioen</a></li>
+      <li><a href="https://www.gva.be/sport/wielrennen/tom-boonen-het-leven-voor-en-na-tommeke-tommeke-wat-doe-je-nu-in-madrid-2005/38698462.html" target="_blank" rel="noopener noreferrer">GVA - Tom Boonen: het leven voor en na 'Tommeke'</a></li>
+    </ul>
+  </p>
+
+  <video controls style="max-width: 100%; margin-top: 20px;">
+    <source src="tom.mp4" type="video/mp4" />
+    Je browser ondersteunt deze video niet.
+  </video>
+</div>
+
+
+
       <a href="index.html" class="back-button">⬅ Terug naar Home</a>
-    </article>
-  </div>
+    </div>
+  </article>
+</div>
 
   <div class="toggle-container">
     <button class="toggle-button" onclick="toggleTheme()">Light/Dark Mode</button>
@@ -536,6 +641,40 @@
     createParticles();
     drawParticles();
   </script>
+
+<script>
+document.getElementById("quiz-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const answers = {
+    q1: "b",
+    q2: "a",
+    q3: "b",
+    q4: "b",
+    q5: "b"
+  };
+
+  let score = 0;
+  let total = Object.keys(answers).length;
+
+  for (let key in answers) {
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (selected && selected.value === answers[key]) {
+      score++;
+    }
+  }
+
+  document.getElementById("score-text").innerText = `Je score: ${score} van de ${total}`;
+  document.getElementById("quiz-form").style.display = "none";
+  document.getElementById("quiz-result").style.display = "block";
+});
+
+function showVideo() {
+  document.getElementById("quiz-result").style.display = "none";
+  document.getElementById("extra-video").style.display = "block";
+}
+</script>
+
 
 </body>
 </html>
