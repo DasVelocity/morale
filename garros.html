@@ -315,6 +315,8 @@
       pointer-events: none;
     }
 
+    
+
     /* Responsive adjustments */
     @media (max-width: 768px) {
       header {
@@ -340,14 +342,99 @@
   </header>
 
   <div class="container">
-    <article>
-      <p>Dit wordt later ingevuld. Samenvatting en hoogtepunten van de Roland Garros-finale.</p>
-      <video controls>
-        <source src="garros.mp4" type="video/mp4" />
-        Je browser ondersteunt deze video niet.
-      </video>
-      <a href="index.html" class="back-button">⬅ Terug naar Home</a>
-    </article>
+    <article id="quiz-article">
+  <form id="quiz-form">
+    <p style="font-size: 1.2em; font-weight: 400;">Test je kennis over Henin vs. Clijsters - Roland Garros 2003!</p>
+
+    <!-- Vraag 1 -->
+    <div style="margin-bottom: 25px;">
+      <p><strong>1. Hoeveel keer troffen Henin en Clijsters elkaar in totaal op Roland Garros?</strong></p>
+      <label><input type="radio" name="q1" value="a" required> 2 keer</label><br>
+      <label><input type="radio" name="q1" value="b"> 3 keer</label><br>
+      <label><input type="radio" name="q1" value="c"> 4 keer</label><br>
+      <label><input type="radio" name="q1" value="d"> 5 keer</label>
+    </div>
+
+    <!-- Vraag 2 -->
+    <div style="margin-bottom: 25px;">
+      <p><strong>2. Welke speelster versloeg Justine Henin in de halve finale om de finale te bereiken?</strong></p>
+      <label><input type="radio" name="q2" value="a" required> Serena Williams</label><br>
+      <label><input type="radio" name="q2" value="b"> Nadia Petrova</label><br>
+      <label><input type="radio" name="q2" value="c"> Amélie Mauresmo</label><br>
+      <label><input type="radio" name="q2" value="d"> Conchita Martínez</label>
+    </div>
+
+    <!-- Vraag 3 -->
+    <div style="margin-bottom: 25px;">
+      <p><strong>3. Hoeveel Grand Slam-finales had Kim Clijsters gespeeld vóór deze Roland Garros-finale?</strong></p>
+      <label><input type="radio" name="q3" value="a" required> Geen</label><br>
+      <label><input type="radio" name="q3" value="b"> Één</label><br>
+      <label><input type="radio" name="q3" value="c"> Twee</label><br>
+      <label><input type="radio" name="q3" value="d"> Drie</label>
+    </div>
+
+    <!-- Vraag 4 -->
+    <div style="margin-bottom: 25px;">
+      <p><strong>4. In welk jaar won Kim Clijsters uiteindelijk wél Roland Garros?</strong></p>
+      <label><input type="radio" name="q4" value="a" required> 2005</label><br>
+      <label><input type="radio" name="q4" value="b"> 2007</label><br>
+      <label><input type="radio" name="q4" value="c"> 2009</label><br>
+      <label><input type="radio" name="q4" value="d"> Nooit</label>
+    </div>
+
+    <!-- Vraag 5 -->
+    <div style="margin-bottom: 25px;">
+      <p><strong>5. Hoeveel Grand Slam-titels heeft Justine Henin in totaal gewonnen?</strong></p>
+      <label><input type="radio" name="q5" value="a" required> 5</label><br>
+      <label><input type="radio" name="q5" value="b"> 7</label><br>
+      <label><input type="radio" name="q5" value="c"> 8</label><br>
+      <label><input type="radio" name="q5" value="d"> 9</label>
+    </div>
+
+    <button type="submit" class="back-button" style="margin-top: 10px;">Toon Score</button>
+  </form>
+
+  <!-- Resultaat -->
+  <div id="quiz-result" style="margin-top: 30px; display: none;">
+    <p id="score-text" style="font-size: 1.3em; font-weight: 500;"></p>
+    <div id="summary-text" style="margin-top: 15px;"></div>
+    <button class="back-button" onclick="showVideo()">Bekijk video & verhaal</button>
+  </div>
+
+<!-- Extra verhaal + video -->
+<div id="extra-video" style="margin-top: 40px; display: none;">
+  <p><strong>De Legendarische Finale van Roland Garros 2003: Henin vs. Clijsters</strong></p>
+
+  <p>Op 7 juni 2003 vond op Roland Garros een historisch moment plaats in de Belgische sportgeschiedenis: de eerste Grand Slam-finale ooit tussen twee Belgische vrouwen, Kim Clijsters en Justine Henin. Wat begon als een droom voor het Belgische tennis eindigde in een klinkende overwinning voor Henin, die hiermee haar allereerste Grand Slam-titel veroverde. De wedstrijd werd gespeeld op het iconische Court Philippe Chatrier in Parijs en kreeg wereldwijd aandacht. Zelfs het Belgische koningspaar woonde de finale bij en maar liefst 1,3 miljoen Vlamingen volgden de wedstrijd live op televisie.  
+  De rivaliteit tussen Clijsters en Henin was al enkele jaren aan het groeien. Beiden waren jonge, getalenteerde speelsters met een compleet verschillend speltype. Henin, afkomstig uit Luik, stond bekend om haar finesse, haar sierlijke enkelhandige backhand en haar mentale veerkracht. Clijsters daarentegen, opgegroeid in Bilzen en dochter van voetballer Lei Clijsters en turnster Els Vandecaetsbeek, was geliefd om haar kracht, snelheid en vriendelijke karakter. Twee jaar voor deze finale stonden Clijsters en Henin al eens tegen elkaar in een attractieve halve  finale, toen won Clijsters, maar verloor ze uiteindelijk de finale tegen Jennifer Capriati. 
+  Tijdens Roland Garros 2003 wist Henin op indrukwekkende wijze door het toernooi te stormen. In de halve finale schakelde ze niemand minder dan de toenmalige nummer één van de wereld, Serena Williams, uit in een felbevochten duel. Daarmee doorbrak Henin Serena’s reeks van 33 opeenvolgende overwinningen op Grand Slams. Clijsters had op haar beurt ook een sterk toernooi achter de rug, waarbij ze onder andere het Franse publiek stil kreeg door thuisfavoriete Amélie Mauresmo uit te schakelen. Alles wees erop dat de finale een spannende clash zou worden tussen twee landgenotes in topvorm.
+  "Ik zat in de puree met mijn forehand" - Kim Clijsters
+  De werkelijkheid bleek anders. Henin domineerde de wedstrijd vanaf het eerste punt. Ze won de eerste set met een droge 6-0 — een ‘bagel’, zoals dat in tennisjargon heet, en zeldzaam in een Grand Slam-finale. De tweede set verliep iets evenwichtiger, maar Henin hield het hoofd koel en trok met 6-4 aan het langste eind. De hele partij duurde amper een uur. Hoewel Clijsters zichtbaar worstelde met de druk en haar spel niet kon vinden, speelde Henin misschien wel de beste partij van haar carrière tot dan toe. Haar precisie, beweging en kalmte maakten het verschil.
+  “Mijn mama kijkt vanuit het paradijs mee. Ik hoop dat je fier op mij bent, mama” - Justine Henin
+  Na afloop droeg Henin haar overwinning op aan haar overleden moeder, aan wie ze als klein meisje had beloofd ooit Roland Garros te winnen. Het moment raakte velen, ook Clijsters, die ondanks de pijn van het verlies haar tegenstandster sportief feliciteerde. Ze lieten de wereld zien dat een klein land als België groots kon zijn in het vrouwentennis.
+  De finale van 2003 betekende meer dan een sportieve overwinning, het was een cultureel moment. Voor het eerst was België het middelpunt van de tenniswereld. En als extra bijzonder feit: deze finale was ook het eerste volledig Belgische duel in een Grand Slam-finale – bij zowel de vrouwen als de mannen. Henin’s overwinning betekende niet alleen haar doorbraak op het allerhoogste niveau, maar luidde ook het begin in van een gouden tijdperk voor het Belgische tennis. Later dat jaar stonden ze ook nog tegen elkaar in de finale van de US Open en de Australian Open, telkens won Henin.
+  In totaal zou Henin zeven Grand Slam-titels winnen (1x Australian Open, 4x Roland Garros en 2x de US open), terwijl Clijsters er vier op haar naam schreef (1x Australian Open en 3x US open). De rivaliteit groeide uit tot één van de meest boeiende in het moderne vrouwentennis.</p>
+
+  <video controls style="max-width: 100%; margin-top: 20px;">
+    <source src="garros.mp4" type="video/mp4" />
+    Je browser ondersteunt deze video niet.
+  </video>
+</div>
+
+
+    <div style="margin-top: 20px;">
+      <strong>Meer lezen:</strong>
+      <ul>
+        <li><a href="https://sporza.be/nl/2023/06/07/7-juni-2003-kim-clijsters-en-justine-henin-spelen-tegenvallende-finale-op-roland-garros~1686128271399/" target="_blank">Sporza: Clijsters vs. Henin - Roland Garros 2003</a></li>
+        <li><a href="https://en.wikipedia.org/wiki/Clijsters%E2%80%93Henin_rivalry" target="_blank">Wikipedia: Rivaliteit Henin-Clijsters</a></li>
+        <li><a href="https://www.nieuwsblad.be/cnt/dmf20230526_94580584" target="_blank">Nieuwsblad: Blik op het verleden</a></li>
+      </ul>
+    </div>
+
+    <a href="index.html" class="back-button">⬅ Terug naar Home</a>
+  </div>
+</article>
+
   </div>
 
   <div class="toggle-container">
@@ -536,6 +623,40 @@
     createParticles();
     drawParticles();
   </script>
+
+  <script>
+document.getElementById("quiz-form").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  const answers = {
+    q1: "c",
+    q2: "a",
+    q3: "c",
+    q4: "d",
+    q5: "b"
+  };
+
+  let score = 0;
+  let total = Object.keys(answers).length;
+
+  for (let key in answers) {
+    const selected = document.querySelector(`input[name="${key}"]:checked`);
+    if (selected && selected.value === answers[key]) {
+      score++;
+    }
+  }
+
+  document.getElementById("score-text").innerText = `Je score: ${score} van de ${total}`;
+  document.getElementById("quiz-form").style.display = "none";
+  document.getElementById("quiz-result").style.display = "block";
+});
+
+function showVideo() {
+  document.getElementById("quiz-result").style.display = "none";
+  document.getElementById("extra-video").style.display = "block";
+}
+</script>
+
 
 </body>
 </html>
